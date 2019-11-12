@@ -96,8 +96,8 @@ qn.uptoken = function(bucket) {
             promiseArr.push(p)
         }
 
-        Promise.all(promiseArr).then(function () {
-            console.log(callbackArr);
+        Promise.all(promiseArr).then(function (res) {
+            return callback(callbackArr)
         });
 
 

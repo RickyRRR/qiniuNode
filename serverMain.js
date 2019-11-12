@@ -26,7 +26,7 @@ app.post("/upImg",function(req,routerRes){
     try{
         qn.upImg(req,function(res){
             console.log('res',res);
-            return routerRes.send('hahhaha')
+            return routerRes.send(res)
             /*if(res.status == 0){
                 return routerRes.json(result(res.data,true));
             }else{
